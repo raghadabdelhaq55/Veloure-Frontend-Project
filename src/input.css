@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-Inter: "Inter", sans-serif;
+
+  --color-background: #0F0F10;
+  --color-surface: #181818;
+  --color-card: #1D1D1D;
+
+  --color-gold: #C8A15A;
+
+  --color-text: #F8F6F2;
+  --color-muted: #A5A5A5;
+
+  --color-line: #8C7B5E;
+  --color-hair: rgba(255, 255, 255, 0.07);
+
+  --color-tint: rgba(140, 123, 94, 0.19);
+}
+
+@layer components {
+    .nav-link {
+        @apply text-muted tracking-[0.22em] uppercase text-[11px] hover:text-text  hover:border-b-2 hover:border-b-line pb-3;
+    }
+
+    .nav-link-active {
+        @apply text-text border-b-2 border-b-line;
+    }
+
+
+} 
