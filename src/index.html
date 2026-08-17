@@ -18,111 +18,130 @@
   </head>
 
   <body class="bg-background text-text font-Inter">
-    <header class="relative min-h-screen bg-[url('../assets/hero.png')] bg-cover bg-center bg-no-repeat py-8">
-    <div class="container mx-auto flex items-center fixed top-0 left-0 right-0 z-50 py-8">
+    <header
+      class="relative min-h-screen bg-[url('../assets/hero.png')] bg-cover bg-center bg-no-repeat py-8"
+    >
+      <div
+        class="container mx-auto flex items-center fixed top-0 left-0 right-0 z-50 py-6 lg:py-8 px-6"
+      >
         <div class="logo">
-          <a href="#" class="flex items-center gap-4">
+          <a href="#" class="flex items-center gap-3 lg:gap-4">
             <img
               src="../assets/v-logo.png"
               alt="Veloure Logo"
-              class="w-10 h-10"
+              class="w-8 h-8 lg:w-10 lg:h-10"
             />
+
             <div class="flex flex-col">
-              <span class="font-display text-2xl tracking-[0.25em] text-text">
+              <span
+                class="font-display text-xl lg:text-2xl tracking-[0.25em] text-text"
+              >
                 VELOURE
               </span>
 
-              <span class="text-[9px] tracking-[0.25em] uppercase text-muted pr-8">
+              <span
+                class="text-[8px] lg:text-[9px] tracking-[0.25em] uppercase text-muted lg:pr-8"
+              >
                 Automotive Atelier
               </span>
             </div>
           </a>
         </div>
-        <nav>
-            <ul class="flex items-center gap-6">
-                <li><a href="#" class="nav-link nav-link-active">Home</a></li>
-                <li><a href="#" class="nav-link">Fleet</a></li>
-                <li><a href="#" class="nav-link">Experience</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
-            </ul>
+        <nav class="hidden lg:block">
+          <ul class="flex items-center gap-6">
+            <li><a href="#" class="nav-link nav-link-active">Home</a></li>
+            <li><a href="#" class="nav-link">Fleet</a></li>
+            <li><a href="#" class="nav-link">Experience</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
         </nav>
-        <div class="flex items-end ml-auto">
-        <button class="ml-12 ">  
-              <img src="../assets/bright-icon.png" alt="" class="w-12 h-12 " />
-        </button>
+        <div class="flex items-center lg:items-end ml-auto">
+          <button class="ml-4 lg:ml-12">
+            <img
+              src="../assets/bright-icon.png"
+              alt=""
+              class="w-10 h-10 lg:w-12 lg:h-12"
+            />
+          </button>
 
-        <button class="ml-4 text-line tracking-[0.22em] uppercase text-[11px] py-4 px-7 border border-line
-                       hover:bg-tint hover:scale-105 transition-transform duration-300">
-              Reserve Now
-        </button>
+          <button class="ml-2 lg:hidden" aria-label="Open menu">
+            <img src="../assets/v-menu.png" alt="Menu" class="w-10 h-10" />
+          </button>
+
+          <button
+            class="hidden lg:block ml-4 text-line tracking-[0.22em] uppercase text-[11px] py-4 px-7 border border-line hover:bg-tint hover:scale-105 transition-transform duration-300"
+          >
+            Reserve Now
+          </button>
         </div>
-        </div>
-        
-        <section class="hero container mx-auto flex flex-col text-text mt-30 ">
-          <p class="text-[11px] text-line uppercase pb-8">
-             <span> ———— </span> 
-              <span class="tracking-[0.35em] ml-4">   
-               EST . MMXIV — MONACO  ·  LONDON  ·  DUBAI 
-              </span>
-          </p>
+      </div>
 
-          <h1 class="text-8xl font-display pb-8"> The art of 
-            <span class="italic">arrival.</span> 
-          </h1>
+      <section
+        class="hero container mx-auto flex flex-col text-text mt-32 lg:mt-30 px-6 xl:px-0"
+      >
+        <p class="text-[10px] sm:text-[11px] text-line uppercase pb-6 lg:pb-8">
+          <span class="hidden sm:inline"> ———— </span>
+          <span class="tracking-[0.2em] sm:tracking-[0.35em] sm:ml-4">
+            EST . MMXIV — MONACO · LONDON · DUBAI
+          </span>
+        </p>
 
-          <p class="text-[16px] text-muted max-w-lg">
-            Thirty-eight motorcars, kept to concours standard and delivered by a
-            chauffeur who knows the route before you ask. Reserve by the day,
-            the weekend, or the season.
-          </p>
-           
-          <div class="flex items-center gap-5 my-12">
-          <button class=" text-line tracking-[0.24em] uppercase text-[11px] py-5 px-10 border border-line
-           hover:bg-tint hover:scale-105 transition-transform duration-300 ">
+        <h1
+          class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display pb-6 lg:pb-8"
+        >
+          The art of
+          <span class="italic">arrival.</span>
+        </h1>
+
+        <p class="text-[15px] sm:text-[16px] text-muted max-w-lg">
+          Thirty-eight motorcars, kept to concours standard and delivered by a
+          chauffeur who knows the route before you ask. Reserve by the day, the
+          weekend, or the season.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5 my-10 lg:my-12"
+        >
+          <button
+            class="w-full sm:w-auto text-line tracking-[0.24em] uppercase text-[11px] py-5 px-10 border border-line hover:bg-tint hover:scale-105 transition-transform duration-300"
+          >
             Reserve a Motorcar
           </button>
-          <button class="text-text tracking-[0.24em] uppercase text-[11px ] py-5 px-10 border border-muted
-           hover:scale-105 hover:border-text transition-all duration-300 ">
+          <button
+            class="w-full sm:w-auto text-text tracking-[0.24em] uppercase text-[11px ] py-5 px-10 border border-muted hover:scale-105 hover:border-text transition-all duration-300"
+          >
             View the Fleet
           </button>
+        </div>
+        <div
+          class="flex flex-wrap items-start gap-y-8 border-t border-muted pt-7 mt-12 lg:mt-20 pb-12 lg:pb-0"
+        >
+          <div class="w-1/2 sm:w-1/3 lg:w-1/4">
+            <span class="font-display text-4xl text-text"> 38 </span>
+
+            <p class="mt-1 text-[11px] tracking-[0.3em] uppercase text-muted">
+              Motorcars in the register
+            </p>
           </div>
-          <div class="flex items-start border-t border-muted pt-7 mt-20">
 
-          <div class="w-1/4">
-          <span class="font-display text-4xl text-text">
-           38
-          </span>
+          <div class="w-1/2 sm:w-1/3 lg:w-1/4">
+            <span class="font-display text-4xl text-text"> 04 </span>
 
-    <p class="mt-1 text-[11px] tracking-[0.3em] uppercase text-muted">
-      Motorcars in the register
-    </p>
-  </div>
+            <p class="mt-1 text-[11px] tracking-[0.3em] uppercase text-muted">
+              Cities, one standard
+            </p>
+          </div>
 
-  <div class="w-1/4">
-    <span class="font-display text-4xl text-text">
-      04
-    </span>
+          <div class="w-1/2 sm:w-1/3 lg:w-1/4">
+            <span class="font-display text-4xl text-text"> 24h </span>
 
-    <p class="mt-1 text-[11px] tracking-[0.3em] uppercase text-muted">
-      Cities, one standard
-    </p>
-  </div>
-
-  <div class="w-1/4">
-    <span class="font-display text-4xl text-text">
-      24h
-    </span>
-
-    <p class="mt-1 text-[11px] tracking-[0.3em] uppercase text-muted">
-      Concierge, spoken not typed
-    </p>
-  </div>
-
-   </div>
-        </section>
+            <p class="mt-1 text-[11px] tracking-[0.3em] uppercase text-muted">
+              Concierge, spoken not typed
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
-
-
   </body>
 </html>
