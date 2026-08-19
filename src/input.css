@@ -17,7 +17,18 @@
   --color-hair: rgba(255, 255, 255, 0.07);
 
   --color-tint: rgba(140, 123, 94, 0.19);
-}
+
+  --animate-moveLeft: moveLeft 40s linear infinite;
+
+  @keyframes moveLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+ }
 
 @layer components {
     .nav-link {
@@ -28,5 +39,31 @@
         @apply text-text border-b-2 border-b-line;
     }
 
+    .site-nav {
+        @apply fixed top-0 left-0 right-0 z-50 py-6 lg:py-8;
+    }
 
-} 
+    .brand-moveleft {
+        @apply overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_10%,#000_90%,transparent)];
+    }
+
+    .brand-track {
+        @apply flex w-max animate-moveLeft motion-reduce:animate-none hover:[animation-play-state:paused];
+    }
+
+    .brand-list {
+        @apply flex items-center shrink-0;
+    }
+
+    .brand-card {
+        @apply flex flex-col items-center gap-5 lg:gap-6 mx-3 lg:mx-4 px-8 lg:px-12 py-8 lg:py-10 border border-hair border-b-2 border-b-transparent bg-card/40 hover:bg-card hover:border-b-line transition-colors duration-300;
+    }
+
+    .brand-logo {
+        @apply h-16 lg:h-20 w-40 lg:w-52 object-contain opacity-60 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition duration-300;
+    }
+
+    .brand-name {
+        @apply font-display text-xl lg:text-2xl tracking-[0.28em] uppercase text-muted whitespace-nowrap group-hover:text-text transition-colors duration-300;
+    }
+}
