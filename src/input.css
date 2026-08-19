@@ -66,4 +66,48 @@
     .brand-name {
         @apply font-display text-xl lg:text-2xl tracking-[0.28em] uppercase text-muted whitespace-nowrap group-hover:text-text transition-colors duration-300;
     }
+    .collection-card {
+        @apply flex flex-col bg-card;
+    }
+
+    .collection-media {
+        @apply relative overflow-hidden m-4 min-h-[19rem];
+    }
+
+    .collection-image {
+        @apply w-full h-[19rem] object-cover hover:scale-105 transition-transform duration-500;
+    }
+
+
+    .collection-body {
+        @apply flex flex-col px-8 pb-8 pt-2;
+    }
+
+    .collection-brand {
+        @apply text-[11px] tracking-[0.3em] uppercase text-muted;
+    }
+
+    .collection-model {
+        @apply font-display text-3xl lg:text-4xl text-text mt-3 pb-7 border-b border-hair;
+    }
+
+    .collection-specs {
+        @apply flex flex-wrap items-center gap-x-7 gap-y-2 py-7 text-[12px] tracking-[0.12em] text-muted;
+    }
+
+    .collection-footer {
+        @apply flex items-center justify-between gap-4;
+    }
+
+    .collection-price {
+        @apply font-display text-3xl text-text;
+    }
+
+    .collection-per {
+        @apply text-[12px] text-muted ml-1;
+    }
+
+    .collection-details {
+        @apply text-[11px] tracking-[0.28em] uppercase text-line hover:text-text transition-colors duration-300;
+    }
 }
