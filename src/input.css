@@ -44,7 +44,7 @@
     }
 
     .brand-moveleft {
-        @apply overflow-hidden [mask-image:linear-gradient(to_right,transparent,#000_10%,#000_90%,transparent)];
+        @apply overflow-hidden mask-[linear-gradient(to_right,transparent,#000_10%,#000_90%,transparent)];
     }
 
     .brand-track {
@@ -71,11 +71,11 @@
     }
 
     .collection-media {
-        @apply relative overflow-hidden m-4 min-h-[19rem];
+        @apply relative overflow-hidden m-4;
     }
 
     .collection-image {
-        @apply w-full h-[19rem] object-cover hover:scale-105 transition-transform duration-500;
+        @apply w-full h-76 object-cover hover:scale-105 transition-transform duration-500;
     }
 
 
@@ -111,14 +111,6 @@
         @apply text-[11px] tracking-[0.28em] uppercase text-line hover:text-text transition-colors duration-300;
     }
 
-
-
-
-
-
-
-
-
     .limited-spec {
         @apply flex items-baseline justify-between gap-6 py-5 border-b border-hair;
     }
@@ -129,6 +121,22 @@
 
     .limited-spec-value {
         @apply text-right font-display text-xl lg:text-2xl leading-none text-text;
+    }
+
+    .why-card {
+        @apply flex flex-col px-8 lg:px-10 py-10 lg:py-14 border-b border-r border-hair hover:bg-card/40 transition-colors duration-300;
+    }
+
+    .why-number {
+        @apply flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-line text-[12px] tracking-[0.15em] text-line;
+    }
+
+    .why-title {
+        @apply font-display text-2xl lg:text-[28px] leading-tight pt-8 lg:pt-10;
+    }
+
+    .why-text {
+        @apply text-[15px] leading-[1.9] text-muted pt-5;
     }
 
 }
