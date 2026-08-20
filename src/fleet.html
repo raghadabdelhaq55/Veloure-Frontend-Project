@@ -17,9 +17,9 @@
 </head>
 <body class="font-body text-text bg-background">
     <header
-      class="relative min-h-screen bg-black bg-cover bg-center bg-no-repeat py-8"
+      class="relative h-[80px] lg:h-[104px]"
     >
-      <div id="siteNav" class="site-nav">
+      <div id="siteNav" class="site-nav border-b border-hair bg-background">
         <div class="container mx-auto flex items-center px-6">
           <div class="logo">
             <a href="#" class="flex items-center gap-3 lg:gap-4">
@@ -76,5 +76,30 @@
       </div>
 
     </header>
+
+    
+    <section
+      class="fleet-intro container mx-auto flex flex-col text-text mt-12 lg:mt-16 px-6"
+    >
+      <p class="text-[10px] sm:text-[11px] text-line uppercase pb-6 lg:pb-8">
+        <span class="hidden sm:inline"> ——— </span>
+        <span class="tracking-[0.2em] sm:tracking-[0.35em] sm:ml-2">
+          Our Collection
+        </span>
+      </p>
+
+      <div
+        class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 lg:gap-16"
+      >
+        <h1
+          class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display leading-none"
+        >
+          The fleet
+        </h1>
+      </div>
+
+      <div class="border-t border-hair mt-12 lg:mt-16"></div>
+      
+    </section>
 </body>
 </html>
