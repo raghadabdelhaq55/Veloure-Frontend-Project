@@ -110,4 +110,25 @@
     .collection-details {
         @apply text-[11px] tracking-[0.28em] uppercase text-line hover:text-text transition-colors duration-300;
     }
+
+
+
+
+
+
+
+
+
+    .limited-spec {
+        @apply flex items-baseline justify-between gap-6 py-5 border-b border-hair;
+    }
+
+    .limited-spec-label {
+        @apply text-left text-[11px] tracking-[0.28em] uppercase text-muted;
+    }
+
+    .limited-spec-value {
+        @apply text-right font-display text-xl lg:text-2xl leading-none text-text;
+    }
+
 }
