@@ -1192,7 +1192,7 @@
     transition-duration: 300ms;
     &:hover {
       @media (hover: hover) {
-        color: var(--color-text);
+        color: var(--color-line);
       }
     }
   }
@@ -1221,7 +1221,7 @@
     }
     &:hover {
       @media (hover: hover) {
-        color: var(--color-text);
+        color: var(--color-line);
       }
     }
   }
@@ -1238,7 +1238,7 @@
     transition-duration: 300ms;
     &:hover {
       @media (hover: hover) {
-        color: var(--color-text);
+        color: var(--color-line);
       }
     }
   }
