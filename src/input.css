@@ -364,4 +364,29 @@
     .map-card {
         @apply absolute top-8 left-8 lg:top-12 lg:left-12 max-w-xs bg-background/90 border border-hair px-8 py-8;
     }
+
+    .faq-item {
+        @apply border-b border-hair first:border-t first:border-hair;
+    }
+
+    .faq-question {
+        @apply flex w-full items-center justify-between gap-8 text-left cursor-pointer py-8 font-display text-xl lg:text-2xl text-text hover:text-line transition-colors duration-300;
+    }
+
+    .faq-sign {
+        @apply flex items-center justify-center shrink-0 w-8 h-8 border border-hair text-[15px] text-line transition-transform duration-300;
+    }
+
+    .faq-answer {
+        @apply hidden text-[15px] leading-[1.9] text-muted pb-8 pr-12;
+    }
+
+    .faq-toggle:checked ~ .faq-answer {
+        @apply block;
+    }
+
+    .faq-toggle:checked ~ .faq-question .faq-sign {
+        @apply rotate-45 border-line;
+    }
+
 }

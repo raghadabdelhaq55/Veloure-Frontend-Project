@@ -2285,6 +2285,80 @@
       left: calc(var(--spacing) * 12);
     }
   }
+  .faq-item {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    border-color: var(--color-hair);
+    &:first-child {
+      border-top-style: var(--tw-border-style);
+      border-top-width: 1px;
+    }
+    &:first-child {
+      border-color: var(--color-hair);
+    }
+  }
+  .faq-question {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(var(--spacing) * 8);
+    padding-block: calc(var(--spacing) * 8);
+    text-align: left;
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+    color: var(--color-text);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-line);
+      }
+    }
+    @media (width >= 64rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .faq-sign {
+    display: flex;
+    height: calc(var(--spacing) * 8);
+    width: calc(var(--spacing) * 8);
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--color-hair);
+    font-size: 15px;
+    color: var(--color-line);
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .faq-answer {
+    display: none;
+    padding-right: calc(var(--spacing) * 12);
+    padding-bottom: calc(var(--spacing) * 8);
+    font-size: 15px;
+    --tw-leading: 1.9;
+    line-height: 1.9;
+    color: var(--color-muted);
+  }
+  .faq-toggle:checked ~ .faq-answer {
+    display: block;
+  }
+  .faq-toggle:checked ~ .faq-question .faq-sign {
+    rotate: 45deg;
+    border-color: var(--color-line);
+  }
 }
 @property --tw-border-style {
   syntax: "*";
