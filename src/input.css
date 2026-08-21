@@ -268,4 +268,16 @@
     .value-text {
         @apply text-[15px] leading-[1.9] text-muted pt-5;
     }
+
+    .stat-figure {
+        @apply font-display text-6xl lg:text-7xl leading-none text-text;
+    }
+
+    .stat-rule {
+        @apply block w-10 border-t border-line mt-5;
+    }
+
+    .stat-label {
+        @apply text-[11px] tracking-[0.28em] uppercase leading-[2] text-muted pt-5;
+    }
 }
