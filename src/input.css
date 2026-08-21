@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../index.html";
 
 @theme {
   --font-display: "Cormorant Garamond", serif;
