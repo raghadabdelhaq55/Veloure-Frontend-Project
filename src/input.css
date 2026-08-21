@@ -82,6 +82,18 @@
         @apply px-5 py-3 text-left text-[13px] text-muted hover:text-text hover:bg-tint transition-colors duration-300;
     }
 
+    .page-arrow {
+        @apply text-[11px] tracking-[0.28em] uppercase text-line hover:text-text transition-colors duration-300;
+    }
+
+    .page-number {
+        @apply flex items-center justify-center w-12 h-12 border border-hair font-display text-lg text-muted hover:text-text hover:border-line transition-colors duration-300;
+    }
+
+    .page-number-active {
+        @apply border-line text-line;
+    }
+
     .collection-card {
         @apply flex flex-col bg-card;
     }
