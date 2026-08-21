@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
+    --container-xs: 20rem;
     --container-lg: 32rem;
     --container-2xl: 42rem;
     --text-lg: 1.125rem;
@@ -30,6 +31,7 @@
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --leading-tight: 1.25;
+    --leading-snug: 1.375;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -527,6 +529,9 @@
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
@@ -635,6 +640,10 @@
     --tw-leading: 1;
     line-height: 1;
   }
+  .leading-snug {
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
+  }
   .tracking-\[0\.2em\] {
     --tw-tracking: 0.2em;
     letter-spacing: 0.2em;
@@ -642,6 +651,10 @@
   .tracking-\[0\.3em\] {
     --tw-tracking: 0.3em;
     letter-spacing: 0.3em;
+  }
+  .tracking-\[0\.12em\] {
+    --tw-tracking: 0.12em;
+    letter-spacing: 0.12em;
   }
   .tracking-\[0\.22em\] {
     --tw-tracking: 0.22em;
@@ -2231,6 +2244,45 @@
     padding-block: calc(var(--spacing) * 10);
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .map-frame {
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--color-hair);
+    background-color: var(--color-surface);
+    @media (width >= 64rem) {
+      height: 520px;
+    }
+  }
+  .map-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 70%;
+  }
+  .map-card {
+    position: absolute;
+    top: calc(var(--spacing) * 8);
+    left: calc(var(--spacing) * 8);
+    max-width: var(--container-xs);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--color-hair);
+    background-color: color-mix(in srgb, #0F0F10 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-background) 90%, transparent);
+    }
+    padding-inline: calc(var(--spacing) * 8);
+    padding-block: calc(var(--spacing) * 8);
+    @media (width >= 64rem) {
+      top: calc(var(--spacing) * 12);
+    }
+    @media (width >= 64rem) {
+      left: calc(var(--spacing) * 12);
     }
   }
 }

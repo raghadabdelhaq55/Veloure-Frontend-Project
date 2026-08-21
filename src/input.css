@@ -352,4 +352,16 @@
     .out-of-hours {
         @apply border border-line px-8 lg:px-10 py-10 mt-12;
     }
+
+    .map-frame {
+        @apply relative overflow-hidden border border-hair bg-surface h-[420px] lg:h-[520px];
+    }
+
+    .map-image {
+        @apply w-full h-full object-cover opacity-70;
+    }
+
+    .map-card {
+        @apply absolute top-8 left-8 lg:top-12 lg:left-12 max-w-xs bg-background/90 border border-hair px-8 py-8;
+    }
 }
