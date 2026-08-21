@@ -280,4 +280,20 @@
     .stat-label {
         @apply text-[11px] tracking-[0.28em] uppercase leading-[2] text-muted pt-5;
     }
+
+    .pillar {
+        @apply flex flex-col py-14 lg:py-20 lg:px-14 xl:px-20 lg:first:pl-0 lg:last:pr-0 border-b border-hair last:border-b-0 lg:border-b-0 lg:border-l lg:border-hair lg:first:border-l-0;
+    }
+
+    .pillar-label {
+        @apply text-[10px] sm:text-[11px] tracking-[0.35em] uppercase text-line;
+    }
+
+    .pillar-title {
+        @apply font-display text-3xl sm:text-4xl lg:text-[44px] leading-[1.2] pt-6 lg:pt-8;
+    }
+
+    .pillar-text {
+        @apply text-[15px] leading-[1.9] text-muted text-justify pt-6 lg:pt-8;
+    }
 }

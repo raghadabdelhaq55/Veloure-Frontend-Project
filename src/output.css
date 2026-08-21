@@ -1935,6 +1935,93 @@
     color: var(--color-muted);
     text-transform: uppercase;
   }
+  .pillar {
+    display: flex;
+    flex-direction: column;
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    border-color: var(--color-hair);
+    padding-block: calc(var(--spacing) * 14);
+    &:last-child {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+    @media (width >= 64rem) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+    @media (width >= 64rem) {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
+    }
+    @media (width >= 64rem) {
+      border-color: var(--color-hair);
+    }
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 14);
+    }
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+    @media (width >= 64rem) {
+      &:first-child {
+        border-left-style: var(--tw-border-style);
+        border-left-width: 0px;
+      }
+    }
+    @media (width >= 64rem) {
+      &:first-child {
+        padding-left: 0px;
+      }
+    }
+    @media (width >= 64rem) {
+      &:last-child {
+        padding-right: 0px;
+      }
+    }
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .pillar-label {
+    font-size: 10px;
+    --tw-tracking: 0.35em;
+    letter-spacing: 0.35em;
+    color: var(--color-line);
+    text-transform: uppercase;
+    @media (width >= 40rem) {
+      font-size: 11px;
+    }
+  }
+  .pillar-title {
+    padding-top: calc(var(--spacing) * 6);
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+    --tw-leading: 1.2;
+    line-height: 1.2;
+    @media (width >= 40rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 8);
+    }
+    @media (width >= 64rem) {
+      font-size: 44px;
+    }
+  }
+  .pillar-text {
+    padding-top: calc(var(--spacing) * 6);
+    text-align: justify;
+    font-size: 15px;
+    --tw-leading: 1.9;
+    line-height: 1.9;
+    color: var(--color-muted);
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 8);
+    }
+  }
 }
 @property --tw-border-style {
   syntax: "*";
