@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href="./output.css" rel="stylesheet" />
 
@@ -14,11 +14,9 @@
       rel="stylesheet"
     />
     <title>Fleet</title>
-</head>
-<body class="font-body text-text bg-background">
-    <header
-      class="relative h-[80px] lg:h-[104px]"
-    >
+  </head>
+  <body class="font-body text-text bg-background">
+    <header class="relative h-20 lg:h-26">
       <div id="siteNav" class="site-nav border-b border-hair bg-background">
         <div class="container mx-auto flex items-center px-6">
           <div class="logo">
@@ -47,8 +45,14 @@
           <nav class="hidden lg:block">
             <ul class="flex items-center gap-6">
               <li><a href="./index.html" class="nav-link">Home</a></li>
-              <li><a href="./fleet.html" class="nav-link nav-link-active">Fleet</a></li>
-              <li><a href="./Experience.html" class="nav-link">Experience</a></li>
+              <li>
+                <a href="./fleet.html" class="nav-link nav-link-active"
+                  >Fleet</a
+                >
+              </li>
+              <li>
+                <a href="./Experience.html" class="nav-link">Experience</a>
+              </li>
               <li><a href="./About.html" class="nav-link">About</a></li>
               <li><a href="./Contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -66,17 +70,16 @@
               <img src="../assets/v-menu.png" alt="Menu" class="w-10 h-10" />
             </button>
 
-            <a href="./Contact.html"
-              class="hidden lg:block text-center ml-4 text-line tracking-[0.22em] uppercase text-[11px] py-4 px-7 border border-line hover:bg-tint hover:scale-105 transition-transform duration-300">Reserve Now</a>
+            <a
+              href="./Contact.html"
+              class="hidden lg:block text-center ml-4 text-line tracking-[0.22em] uppercase text-[11px] py-4 px-7 border border-line hover:bg-tint hover:scale-105 transition-transform duration-300"
+              >Reserve Now</a
+            >
           </div>
         </div>
       </div>
-
     </header>
 
-    
-
-    
     <section
       class="fleet-intro container mx-auto flex flex-col text-text mt-12 lg:mt-16 px-6"
     >
@@ -104,19 +107,39 @@
       >
         <div class="flex flex-wrap items-center gap-3">
           <span class="filter-label mr-2">Body</span>
-          <button type="button" class="filter-pill filter-pill-active" data-filter="all">All</button>
-          <button type="button" class="filter-pill" data-filter="saloon">Saloon</button>
-          <button type="button" class="filter-pill" data-filter="coupe">Coup&eacute;</button>
-          <button type="button" class="filter-pill" data-filter="convertible">Convertible</button>
-          <button type="button" class="filter-pill" data-filter="supercar">Supercar</button>
-          <button type="button" class="filter-pill" data-filter="suv">SUV</button>
+          <button
+            type="button"
+            class="filter-pill filter-pill-active"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button type="button" class="filter-pill" data-filter="saloon">
+            Saloon
+          </button>
+          <button type="button" class="filter-pill" data-filter="coupe">
+            Coup&eacute;
+          </button>
+          <button type="button" class="filter-pill" data-filter="convertible">
+            Convertible
+          </button>
+          <button type="button" class="filter-pill" data-filter="supercar">
+            Supercar
+          </button>
+          <button type="button" class="filter-pill" data-filter="suv">
+            SUV
+          </button>
         </div>
 
         <div class="flex items-center gap-5 lg:gap-7">
-          <p class="text-[11px] tracking-[0.2em] uppercase text-muted whitespace-nowrap">
+          <p
+            class="text-[11px] tracking-[0.2em] uppercase text-muted whitespace-nowrap"
+          >
             <span id="fleetCount">9</span> motorcars
           </p>
-          <span class="text-[11px] tracking-[0.28em] uppercase text-muted">Sort</span>
+          <span class="text-[11px] tracking-[0.28em] uppercase text-muted"
+            >Sort</span
+          >
 
           <div class="relative">
             <input type="checkbox" id="fleetSort" class="peer sr-only" />
@@ -135,10 +158,18 @@
             <div
               class="hidden peer-checked:flex absolute right-0 z-10 mt-2 w-56 flex-col bg-surface border border-hair"
             >
-              <button type="button" class="sort-option" data-sort="featured">Featured</button>
-              <button type="button" class="sort-option" data-sort="price-asc">Price: low to high</button>
-              <button type="button" class="sort-option" data-sort="price-desc">Price: high to low</button>
-              <button type="button" class="sort-option" data-sort="power">Power</button>
+              <button type="button" class="sort-option" data-sort="featured">
+                Featured
+              </button>
+              <button type="button" class="sort-option" data-sort="price-asc">
+                Price: low to high
+              </button>
+              <button type="button" class="sort-option" data-sort="price-desc">
+                Price: high to low
+              </button>
+              <button type="button" class="sort-option" data-sort="power">
+                Power
+              </button>
             </div>
           </div>
         </div>
@@ -414,7 +445,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="border-t border-hair mt-12 lg:mt-16"></div>
@@ -426,7 +456,9 @@
         <a href="#" class="page-arrow">&larr; Previous</a>
 
         <div class="flex items-center gap-2">
-          <a href="#" class="page-number page-number-active" aria-current="page">01</a>
+          <a href="#" class="page-number page-number-active" aria-current="page"
+            >01</a
+          >
           <a href="#" class="page-number">02</a>
         </div>
 
@@ -434,7 +466,7 @@
       </nav>
     </section>
 
-        <footer class="border-t border-hair">
+    <footer class="border-t border-hair">
       <div class="container mx-auto px-6 py-20 lg:py-24">
         <div class="grid gap-14 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
           <div>
@@ -466,10 +498,16 @@
             </p>
 
             <ul class="flex items-center gap-3 pt-8">
-              <li><a href="#" class="footer-social" aria-label="Instagram">IG</a></li>
+              <li>
+                <a href="#" class="footer-social" aria-label="Instagram">IG</a>
+              </li>
               <li><a href="#" class="footer-social" aria-label="X">X</a></li>
-              <li><a href="#" class="footer-social" aria-label="LinkedIn">IN</a></li>
-              <li><a href="#" class="footer-social" aria-label="YouTube">YT</a></li>
+              <li>
+                <a href="#" class="footer-social" aria-label="LinkedIn">IN</a>
+              </li>
+              <li>
+                <a href="#" class="footer-social" aria-label="YouTube">YT</a>
+              </li>
             </ul>
           </div>
 
@@ -479,7 +517,9 @@
             <ul class="flex flex-col gap-5">
               <li><a href="./index.html" class="footer-link">Home</a></li>
               <li><a href="./fleet.html" class="footer-link">Fleet</a></li>
-              <li><a href="./Experience.html" class="footer-link">Experience</a></li>
+              <li>
+                <a href="./Experience.html" class="footer-link">Experience</a>
+              </li>
               <li><a href="./About.html" class="footer-link">About</a></li>
               <li><a href="./Contact.html" class="footer-link">Contact</a></li>
             </ul>
@@ -507,7 +547,9 @@
               +377 98 00 00 00
             </a>
 
-            <address class="not-italic text-[15px] leading-[1.9] text-muted pt-6">
+            <address
+              class="not-italic text-[15px] leading-[1.9] text-muted pt-6"
+            >
               7 Avenue Princesse Grace<br />
               98000 Monaco
             </address>
@@ -537,6 +579,5 @@
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
