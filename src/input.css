@@ -235,4 +235,17 @@
     .sequence-when {
         @apply text-[10px] tracking-[0.28em] uppercase text-line pt-8;
     }
+
+    .journey-tile {
+        @apply relative overflow-hidden border border-hair bg-card;
+    }
+
+    .journey-image {
+        @apply w-full h-full object-cover transition-transform duration-700 group-hover:scale-105;
+    }
+
+    .journey-caption {
+        @apply absolute inset-x-0 bottom-0 px-6 lg:px-8 py-6 bg-gradient-to-t from-background/90 to-transparent text-[11px] tracking-[0.28em] uppercase text-text opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500;
+    }
+
 }
