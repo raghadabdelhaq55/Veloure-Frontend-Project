@@ -66,8 +66,9 @@
     .brand-name {
         @apply font-display text-xl lg:text-2xl tracking-[0.28em] uppercase text-muted whitespace-nowrap group-hover:text-text transition-colors duration-300;
     }
-    .filter-label {
-        @apply text-[11px] tracking-[0.28em] uppercase text-muted;
+    .filter-label,
+    .limited-spec-label {
+        @apply text-left text-[11px] tracking-[0.28em] uppercase text-muted;
     }
 
     .filter-pill {
@@ -80,10 +81,6 @@
 
     .sort-option {
         @apply px-5 py-3 text-left text-[13px] text-muted hover:text-text hover:bg-tint transition-colors duration-300;
-    }
-
-    .page-arrow {
-        @apply text-[11px] tracking-[0.28em] uppercase text-line hover:text-text transition-colors duration-300;
     }
 
     .page-number {
@@ -105,7 +102,6 @@
     .collection-image {
         @apply w-full h-76 object-cover hover:scale-105 transition-transform duration-500;
     }
-
 
     .collection-body {
         @apply flex flex-col px-8 pb-8 pt-2;
@@ -135,16 +131,13 @@
         @apply text-[12px] text-muted ml-1;
     }
 
+    .page-arrow,
     .collection-details {
         @apply text-[11px] tracking-[0.28em] uppercase text-line hover:text-text transition-colors duration-300;
     }
 
     .limited-spec {
         @apply flex items-baseline justify-between gap-6 py-5 border-b border-hair;
-    }
-
-    .limited-spec-label {
-        @apply text-left text-[11px] tracking-[0.28em] uppercase text-muted;
     }
 
     .limited-spec-value {
@@ -163,10 +156,6 @@
         @apply font-display text-2xl lg:text-[28px] leading-tight pt-8 lg:pt-10;
     }
 
-    .why-text {
-        @apply text-[15px] leading-[1.9] text-muted pt-5;
-    }
-
     .footer-heading {
         @apply text-[10px] tracking-[0.3em] uppercase text-line pb-8;
     }
@@ -181,6 +170,55 @@
 
     .footer-legal {
         @apply text-[11px] tracking-[0.25em] uppercase text-muted hover:text-line transition-colors duration-300;
+    }
+
+    .story-lead {
+        @apply text-[15px] sm:text-[16px] leading-[1.9] text-text text-justify;
+    }
+
+    .story-lead::first-letter {
+        @apply font-display text-line float-left text-[76px] lg:text-[92px] leading-[0.72] pr-3 pt-2;
+    }
+
+    .story-text {
+        @apply text-[15px] sm:text-[16px] leading-[1.9] text-muted text-justify pt-8;
+    }
+
+    .story-quote {
+        @apply font-display italic text-3xl sm:text-4xl lg:text-[44px] leading-[1.4] text-text;
+    }
+
+    .story-cite {
+        @apply not-italic text-[11px] tracking-[0.3em] uppercase text-line pt-8 lg:pt-10;
+    }
+
+    .step-row {
+        @apply grid gap-6 lg:gap-16 lg:grid-cols-[220px_1fr] px-2 lg:px-4 py-10 lg:py-14 border-b border-hair hover:bg-card/40 transition-colors duration-300;
+    }
+
+    .step-aside {
+        @apply flex items-baseline gap-5 lg:flex-col lg:gap-4;
+    }
+
+    .step-index {
+        @apply text-[11px] tracking-[0.3em] uppercase text-line;
+    }
+
+    .step-time {
+        @apply font-display text-4xl lg:text-5xl leading-none text-text;
+    }
+
+    .step-body {
+        @apply lg:max-w-2xl;
+    }
+
+    .step-title {
+        @apply font-display text-2xl lg:text-[30px] leading-tight;
+    }
+
+    .why-text,
+    .step-text {
+        @apply text-[15px] leading-[1.9] text-muted pt-5;
     }
 
 }

@@ -10,6 +10,7 @@
       "Courier New", monospace;
     --spacing: 0.25rem;
     --container-lg: 32rem;
+    --container-xl: 36rem;
     --container-2xl: 42rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
@@ -267,6 +268,9 @@
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
   }
+  .mt-56 {
+    margin-top: calc(var(--spacing) * 56);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -303,6 +307,9 @@
   .h-full {
     height: 100%;
   }
+  .min-h-\[80vh\] {
+    min-height: 80vh;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -326,6 +333,9 @@
   }
   .max-w-lg {
     max-width: var(--container-lg);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
   }
   .min-w-0 {
     min-width: 0px;
@@ -427,6 +437,9 @@
   }
   .bg-transparent {
     background-color: transparent;
+  }
+  .bg-\[url\(\'\.\.\/assets\/cars\/Aston-martin\.png\'\)\] {
+    background-image: url('../assets/cars/Aston-martin.png');
   }
   .bg-\[url\(\'\.\.\/assets\/hero\.png\'\)\] {
     background-image: url('../assets/hero.png');
@@ -746,6 +759,9 @@
     .lg\:mt-30 {
       margin-top: calc(var(--spacing) * 30);
     }
+    .lg\:mt-64 {
+      margin-top: calc(var(--spacing) * 64);
+    }
     .lg\:ml-12 {
       margin-left: calc(var(--spacing) * 12);
     }
@@ -815,6 +831,16 @@
     .lg\:gap-16 {
       gap: calc(var(--spacing) * 16);
     }
+    .lg\:gap-20 {
+      gap: calc(var(--spacing) * 20);
+    }
+    .lg\:border-l {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
+    }
+    .lg\:border-hair {
+      border-color: var(--color-hair);
+    }
     .lg\:px-16 {
       padding-inline: calc(var(--spacing) * 16);
     }
@@ -848,6 +874,9 @@
     .lg\:pb-20 {
       padding-bottom: calc(var(--spacing) * 20);
     }
+    .lg\:pl-16 {
+      padding-left: calc(var(--spacing) * 16);
+    }
     .lg\:text-right {
       text-align: right;
     }
@@ -874,6 +903,9 @@
   @media (width >= 80rem) {
     .xl\:px-0 {
       padding-inline: 0px;
+    }
+    .xl\:pl-20 {
+      padding-left: calc(var(--spacing) * 20);
     }
   }
   :checked ~ label .\[\:checked\~label_\&\]\:rotate-180 {
@@ -1044,7 +1076,8 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
-  .filter-label {
+  .filter-label, .limited-spec-label {
+    text-align: left;
     font-size: 11px;
     --tw-tracking: 0.28em;
     letter-spacing: 0.28em;
@@ -1100,23 +1133,6 @@
         background-color: var(--color-tint);
       }
     }
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-text);
-      }
-    }
-  }
-  .page-arrow {
-    font-size: 11px;
-    --tw-tracking: 0.28em;
-    letter-spacing: 0.28em;
-    color: var(--color-line);
-    text-transform: uppercase;
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
     &:hover {
       @media (hover: hover) {
         color: var(--color-text);
@@ -1242,7 +1258,7 @@
     font-size: 12px;
     color: var(--color-muted);
   }
-  .collection-details {
+  .page-arrow, .collection-details {
     font-size: 11px;
     --tw-tracking: 0.28em;
     letter-spacing: 0.28em;
@@ -1268,14 +1284,6 @@
     border-bottom-width: 1px;
     border-color: var(--color-hair);
     padding-block: calc(var(--spacing) * 5);
-  }
-  .limited-spec-label {
-    text-align: left;
-    font-size: 11px;
-    --tw-tracking: 0.28em;
-    letter-spacing: 0.28em;
-    color: var(--color-muted);
-    text-transform: uppercase;
   }
   .limited-spec-value {
     text-align: right;
@@ -1355,13 +1363,6 @@
       font-size: 28px;
     }
   }
-  .why-text {
-    padding-top: calc(var(--spacing) * 5);
-    font-size: 15px;
-    --tw-leading: 1.9;
-    line-height: 1.9;
-    color: var(--color-muted);
-  }
   .footer-heading {
     padding-bottom: calc(var(--spacing) * 8);
     font-size: 10px;
@@ -1429,6 +1430,154 @@
         color: var(--color-line);
       }
     }
+  }
+  .story-lead {
+    text-align: justify;
+    font-size: 15px;
+    --tw-leading: 1.9;
+    line-height: 1.9;
+    color: var(--color-text);
+    @media (width >= 40rem) {
+      font-size: 16px;
+    }
+  }
+  .story-lead::first-letter {
+    float: left;
+    padding-top: calc(var(--spacing) * 2);
+    padding-right: calc(var(--spacing) * 3);
+    font-family: var(--font-display);
+    font-size: 76px;
+    --tw-leading: 0.72;
+    line-height: 0.72;
+    color: var(--color-line);
+    @media (width >= 64rem) {
+      font-size: 92px;
+    }
+  }
+  .story-text {
+    padding-top: calc(var(--spacing) * 8);
+    text-align: justify;
+    font-size: 15px;
+    --tw-leading: 1.9;
+    line-height: 1.9;
+    color: var(--color-muted);
+    @media (width >= 40rem) {
+      font-size: 16px;
+    }
+  }
+  .story-quote {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+    --tw-leading: 1.4;
+    line-height: 1.4;
+    color: var(--color-text);
+    font-style: italic;
+    @media (width >= 40rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+    @media (width >= 64rem) {
+      font-size: 44px;
+    }
+  }
+  .story-cite {
+    padding-top: calc(var(--spacing) * 8);
+    font-size: 11px;
+    --tw-tracking: 0.3em;
+    letter-spacing: 0.3em;
+    color: var(--color-line);
+    text-transform: uppercase;
+    font-style: normal;
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 10);
+    }
+  }
+  .step-row {
+    display: grid;
+    gap: calc(var(--spacing) * 6);
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+    border-color: var(--color-hair);
+    padding-inline: calc(var(--spacing) * 2);
+    padding-block: calc(var(--spacing) * 10);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #1D1D1D 40%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-card) 40%, transparent);
+        }
+      }
+    }
+    @media (width >= 64rem) {
+      grid-template-columns: 220px 1fr;
+    }
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 16);
+    }
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 14);
+    }
+  }
+  .step-aside {
+    display: flex;
+    align-items: baseline;
+    gap: calc(var(--spacing) * 5);
+    @media (width >= 64rem) {
+      flex-direction: column;
+    }
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .step-index {
+    font-size: 11px;
+    --tw-tracking: 0.3em;
+    letter-spacing: 0.3em;
+    color: var(--color-line);
+    text-transform: uppercase;
+  }
+  .step-time {
+    font-family: var(--font-display);
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+    --tw-leading: 1;
+    line-height: 1;
+    color: var(--color-text);
+    @media (width >= 64rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  @media (width >= 64rem) {
+    .step-body {
+      max-width: var(--container-2xl);
+    }
+  }
+  .step-title {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+    @media (width >= 64rem) {
+      font-size: 30px;
+    }
+  }
+  .why-text, .step-text {
+    padding-top: calc(var(--spacing) * 5);
+    font-size: 15px;
+    --tw-leading: 1.9;
+    line-height: 1.9;
+    color: var(--color-muted);
   }
 }
 @property --tw-border-style {
