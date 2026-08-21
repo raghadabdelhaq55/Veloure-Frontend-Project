@@ -78,6 +78,8 @@
     </header>
 
     
+
+    
     <section
       class="fleet-intro container mx-auto flex flex-col text-text mt-12 lg:mt-16 px-6"
     >
@@ -99,6 +101,51 @@
       </div>
 
       <div class="border-t border-hair mt-12 lg:mt-16"></div>
+
+      <div
+        class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between py-6 border-b border-hair"
+      >
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="filter-label mr-2">Body</span>
+          <button type="button" class="filter-pill filter-pill-active" data-filter="all">All</button>
+          <button type="button" class="filter-pill" data-filter="saloon">Saloon</button>
+          <button type="button" class="filter-pill" data-filter="coupe">Coup&eacute;</button>
+          <button type="button" class="filter-pill" data-filter="convertible">Convertible</button>
+          <button type="button" class="filter-pill" data-filter="supercar">Supercar</button>
+          <button type="button" class="filter-pill" data-filter="suv">SUV</button>
+        </div>
+
+        <div class="flex items-center gap-5 lg:gap-7">
+          <p class="text-[11px] tracking-[0.2em] uppercase text-muted whitespace-nowrap">
+            <span id="fleetCount">9</span> motorcars
+          </p>
+          <span class="text-[11px] tracking-[0.28em] uppercase text-muted">Sort</span>
+
+          <div class="relative">
+            <input type="checkbox" id="fleetSort" class="peer sr-only" />
+
+            <label
+              for="fleetSort"
+              class="flex items-center gap-4 cursor-pointer bg-surface text-text text-[13px] px-5 py-3 border border-hair hover:border-line peer-focus-visible:border-line transition-colors duration-300"
+            >
+              <span id="fleetSortLabel">Featured</span>
+              <span
+                class="text-line text-[10px] [:checked~label_&]:rotate-180 transition-transform duration-300"
+                >&#9660;</span
+              >
+            </label>
+
+            <div
+              class="hidden peer-checked:flex absolute right-0 z-10 mt-2 w-56 flex-col bg-surface border border-hair"
+            >
+              <button type="button" class="sort-option" data-sort="featured">Featured</button>
+              <button type="button" class="sort-option" data-sort="price-asc">Price: low to high</button>
+              <button type="button" class="sort-option" data-sort="price-desc">Price: high to low</button>
+              <button type="button" class="sort-option" data-sort="power">Power</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12 lg:mt-16">
         <div class="collection-card">

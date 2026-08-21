@@ -66,6 +66,22 @@
     .brand-name {
         @apply font-display text-xl lg:text-2xl tracking-[0.28em] uppercase text-muted whitespace-nowrap group-hover:text-text transition-colors duration-300;
     }
+    .filter-label {
+        @apply text-[11px] tracking-[0.28em] uppercase text-muted;
+    }
+
+    .filter-pill {
+        @apply px-6 py-3 rounded-full border border-hair text-[11px] tracking-[0.28em] uppercase text-muted hover:text-text hover:border-line transition-colors duration-300;
+    }
+
+    .filter-pill-active {
+        @apply border-line text-line bg-tint;
+    }
+
+    .sort-option {
+        @apply px-5 py-3 text-left text-[13px] text-muted hover:text-text hover:bg-tint transition-colors duration-300;
+    }
+
     .collection-card {
         @apply flex flex-col bg-card;
     }
