@@ -1807,6 +1807,92 @@
     line-height: 1.9;
     color: var(--color-muted);
   }
+  .value-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+    border-color: var(--color-hair);
+    padding-top: calc(var(--spacing) * 10);
+    padding-bottom: calc(var(--spacing) * 10);
+    @media (width >= 40rem) {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
+    }
+    @media (width >= 40rem) {
+      border-color: var(--color-hair);
+    }
+    @media (width >= 40rem) {
+      padding-left: calc(var(--spacing) * 8);
+    }
+    @media (width >= 40rem) {
+      &:nth-child(odd) {
+        border-left-style: var(--tw-border-style);
+        border-left-width: 0px;
+      }
+    }
+    @media (width >= 40rem) {
+      &:nth-child(odd) {
+        padding-left: 0px;
+      }
+    }
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 14);
+    }
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 10);
+    }
+    @media (width >= 64rem) {
+      &:first-child {
+        border-left-style: var(--tw-border-style);
+        border-left-width: 0px;
+      }
+    }
+    @media (width >= 64rem) {
+      &:first-child {
+        padding-left: 0px;
+      }
+    }
+    @media (width >= 64rem) {
+      &:nth-child(odd) {
+        border-left-style: var(--tw-border-style);
+        border-left-width: 1px;
+      }
+    }
+    @media (width >= 64rem) {
+      &:nth-child(odd) {
+        padding-left: calc(var(--spacing) * 10);
+      }
+    }
+  }
+  .value-number {
+    font-size: 11px;
+    --tw-tracking: 0.3em;
+    letter-spacing: 0.3em;
+    color: var(--color-line);
+  }
+  .value-title {
+    padding-top: calc(var(--spacing) * 5);
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 6);
+    }
+    @media (width >= 64rem) {
+      font-size: 28px;
+    }
+  }
+  .value-text {
+    padding-top: calc(var(--spacing) * 5);
+    font-size: 15px;
+    --tw-leading: 1.9;
+    line-height: 1.9;
+    color: var(--color-muted);
+  }
 }
 @property --tw-border-style {
   syntax: "*";

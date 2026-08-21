@@ -252,4 +252,20 @@
     .about-intro {
         @apply text-[15px] leading-[1.9] text-muted text-justify;
     }
+
+    .value-card {
+        @apply relative flex flex-col pt-10 lg:pt-14 pb-10 border-t border-hair sm:border-l sm:border-hair sm:pl-8 lg:pl-10 sm:nth-[odd]:border-l-0 sm:nth-[odd]:pl-0 lg:nth-[odd]:border-l lg:nth-[odd]:pl-10 lg:first:border-l-0 lg:first:pl-0;
+    }
+
+    .value-number {
+        @apply text-[11px] tracking-[0.3em] text-line;
+    }
+
+    .value-title {
+        @apply font-display text-2xl lg:text-[28px] leading-tight pt-5 lg:pt-6;
+    }
+
+    .value-text {
+        @apply text-[15px] leading-[1.9] text-muted pt-5;
+    }
 }
