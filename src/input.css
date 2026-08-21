@@ -389,4 +389,180 @@
         @apply rotate-45 border-line;
     }
 
+    .crumb {
+        @apply text-[10px] sm:text-[11px] tracking-[0.28em] uppercase text-muted hover:text-line transition-colors duration-300;
+    }
+
+    .crumb-sep {
+        @apply text-[10px] sm:text-[11px] text-hair px-3 sm:px-4;
+    }
+
+    .crumb-current {
+        @apply text-[10px] sm:text-[11px] tracking-[0.28em] uppercase text-text;
+    }
+
+    .car-eyebrow {
+        @apply text-[10px] sm:text-[11px] tracking-[0.35em] uppercase text-line;
+    }
+
+    .car-title {
+        @apply font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] pt-5 lg:pt-6;
+    }
+
+    .car-tagline {
+        @apply text-[14px] sm:text-[15px] leading-[1.9] text-muted pt-5 lg:pt-6;
+    }
+
+    .car-price-label {
+        @apply text-[10px] tracking-[0.35em] uppercase text-line;
+    }
+
+    .car-price {
+        @apply font-display text-5xl lg:text-6xl leading-none text-text;
+    }
+
+    .car-price-per {
+        @apply text-[13px] text-muted ml-2;
+    }
+
+    .car-cta {
+        @apply inline-block text-center px-8 lg:px-10 py-5 lg:py-6 border border-line text-[11px] tracking-[0.28em] uppercase text-line hover:bg-tint transition-colors duration-300;
+    }
+
+    .section-label {
+        @apply text-[10px] sm:text-[11px] tracking-[0.35em] uppercase text-line;
+    }
+
+    .section-rule {
+        @apply inline-block w-8 border-t border-line align-middle mr-4;
+    }
+
+    .gallery-frame {
+        @apply relative overflow-hidden border border-hair bg-card;
+    }
+
+    .gallery-hero-image {
+        @apply w-full h-[340px] sm:h-[460px] lg:h-[620px] object-cover;
+    }
+
+    .gallery-thumb {
+        @apply relative overflow-hidden border border-hair bg-card;
+    }
+
+    .gallery-thumb-image {
+        @apply w-full h-40 lg:h-52 object-cover transition-transform duration-500 group-hover:scale-105;
+    }
+
+    .gallery-tag {
+        @apply absolute bottom-4 left-4 bg-background/80 px-4 py-2 text-[10px] tracking-[0.28em] uppercase text-text;
+    }
+
+    .spec-cell {
+        @apply flex flex-col px-6 py-7 border-b border-r border-hair;
+    }
+
+    .spec-key {
+        @apply text-[10px] tracking-[0.28em] uppercase text-muted;
+    }
+
+    .spec-value {
+        @apply font-display text-2xl lg:text-[28px] leading-none text-text pt-4;
+    }
+
+    .car-copy {
+        @apply text-[15px] leading-[1.9] text-muted text-justify;
+    }
+
+    .include-item {
+        @apply flex items-start gap-4 py-6 border-b border-hair;
+    }
+
+    .include-check {
+        @apply shrink-0 text-[13px] text-line leading-[1.7];
+    }
+
+    .include-text {
+        @apply text-[15px] leading-[1.7] text-muted;
+    }
+
+    .terms-card {
+        @apply flex flex-col cursor-pointer px-8 lg:px-10 py-10 lg:py-12 border border-hair bg-card/30 transition-colors duration-300 hover:border-line has-[:checked]:border-line has-[:checked]:bg-tint;
+    }
+
+    .terms-radio {
+        @apply appearance-none shrink-0 w-4 h-4 rounded-full border border-line cursor-pointer checked:bg-line checked:shadow-[inset_0_0_0_3px_var(--color-background)];
+    }
+
+    .terms-label {
+        @apply text-[10px] sm:text-[11px] tracking-[0.28em] uppercase text-line;
+    }
+
+    .terms-price {
+        @apply font-display text-4xl lg:text-5xl leading-none text-text;
+    }
+
+    .terms-per {
+        @apply text-[13px] text-muted ml-3;
+    }
+
+    .terms-text {
+        @apply text-[15px] leading-[1.9] text-muted pt-8 mt-8 border-t border-hair;
+    }
+
+    .day-tile {
+        @apply flex flex-col px-5 py-6 border border-hair bg-card/30;
+    }
+
+    .day-name {
+        @apply text-[10px] tracking-[0.28em] uppercase text-muted;
+    }
+
+    .day-number {
+        @apply font-display text-3xl leading-none text-text pt-4;
+    }
+
+    .day-status {
+        @apply text-[9px] tracking-[0.24em] uppercase text-line pt-5;
+    }
+
+    .day-status-reserved {
+        @apply text-text;
+    }
+
+    .day-status-request {
+        @apply text-muted;
+    }
+
+    .cta-band {
+        @apply flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10 border border-line px-8 lg:px-14 py-12 lg:py-16;
+    }
+
+    .cta-title {
+        @apply font-display text-3xl sm:text-4xl lg:text-[44px] leading-tight;
+    }
+
+    .cta-note {
+        @apply text-[15px] leading-[1.9] text-muted pt-4;
+    }
+
+    .related-card {
+        @apply flex flex-col border border-hair bg-card/30 hover:border-line transition-colors duration-300;
+    }
+
+    .related-image {
+        @apply w-full h-56 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-105;
+    }
+
+    .related-brand {
+        @apply text-[10px] tracking-[0.3em] uppercase text-muted;
+    }
+
+    .related-model {
+        @apply font-display text-2xl lg:text-3xl text-text;
+    }
+
+    .related-price {
+        @apply font-display text-xl lg:text-2xl text-text;
+    }
+
 }
