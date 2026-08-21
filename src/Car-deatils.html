@@ -305,6 +305,105 @@
           </div>
         </div>
       </section>
+
+      <section class="container mx-auto px-6 xl:px-0 pb-20 lg:pb-28">
+        <div
+          class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-20"
+        >
+          <div>
+            <p class="section-label">
+              <span class="section-rule" aria-hidden="true"></span>Terms
+            </p>
+
+            <h2
+              class="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.15] pt-6"
+            >
+              Three ways to take it
+            </h2>
+          </div>
+
+          <p class="text-[15px] leading-[1.9] text-muted lg:max-w-[380px]">
+            Each figure is complete: mileage, cover, delivery inside the city
+            and the handover are all inside the price.
+          </p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3 lg:gap-8 mt-12 lg:mt-16">
+          <p class="sr-only">Choose a reservation length</p>
+
+          <label class="terms-card">
+            <div class="flex items-center justify-between gap-6">
+              <span class="terms-label">By the day</span>
+
+              <input
+                type="radio"
+                name="terms"
+                value="day"
+                class="terms-radio"
+              />
+            </div>
+
+            <p class="pt-8">
+              <span class="terms-price">$2,400</span>
+              <span class="terms-per">/ day</span>
+            </p>
+
+            <p class="terms-text">
+              One day, collected and returned at our atelier. Ideal for a dinner
+              or a single drive.
+            </p>
+          </label>
+
+          <label class="terms-card">
+            <div class="flex items-center justify-between gap-6">
+              <span class="terms-label">The weekend</span>
+
+              <input
+                type="radio"
+                name="terms"
+                value="weekend"
+                class="terms-radio"
+                checked
+              />
+            </div>
+
+            <p class="pt-8">
+              <span class="terms-price">$6,480</span>
+              <span class="terms-per">/ 3 days</span>
+            </p>
+
+            <p class="terms-text">
+              Friday noon to Monday morning, with delivery and collection at
+              your address.
+            </p>
+          </label>
+
+          <label class="terms-card">
+            <div class="flex items-center justify-between gap-6">
+              <span class="terms-label">By the week</span>
+
+              <input
+                type="radio"
+                name="terms"
+                value="week"
+                class="terms-radio"
+              />
+            </div>
+
+            <p class="pt-8">
+              <span class="terms-price">$14,160</span>
+              <span class="terms-per">/ 7 days</span>
+            </p>
+
+            <p class="terms-text">
+              Seven days, an interior refresh midweek, and a second driver at no
+              charge.
+            </p>
+          </label>
+        </div>
+
+        <div class="border-t border-hair mt-16 lg:mt-20"></div>
+      </section>
     </main>
 
     <footer class="border-t border-hair">

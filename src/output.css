@@ -1010,6 +1010,9 @@
     .lg\:max-w-160 {
       max-width: calc(var(--spacing) * 160);
     }
+    .lg\:max-w-\[380px\] {
+      max-width: 380px;
+    }
     .lg\:max-w-\[640px\] {
       max-width: 640px;
     }
