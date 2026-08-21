@@ -211,4 +211,28 @@
     .concierge-note {
         @apply mt-auto pt-8 border-t border-hair text-[11px] tracking-[0.28em] uppercase text-line;
     }
+
+    .sequence-step {
+        @apply relative flex flex-col pt-10 lg:pt-12 pb-10 border-t border-hair sm:border-l sm:border-hair sm:pl-8 lg:pl-10 sm:nth-[odd]:border-l-0 sm:nth-[odd]:pl-0 lg:nth-[odd]:border-l lg:nth-[odd]:pl-10 lg:first:border-l-0 lg:first:pl-0;
+    }
+
+    .sequence-marker {
+        @apply absolute -top-[5px] -left-[5px] w-[9px] h-[9px] rotate-45 border border-line bg-background;
+    }
+
+    .sequence-number {
+        @apply text-[11px] tracking-[0.3em] text-line;
+    }
+
+    .sequence-title {
+        @apply font-display text-2xl lg:text-[28px] leading-tight pt-5 lg:pt-6;
+    }
+
+    .sequence-text {
+        @apply text-[15px] leading-[1.9] text-muted pt-5;
+    }
+
+    .sequence-when {
+        @apply text-[10px] tracking-[0.28em] uppercase text-line pt-8;
+    }
 }
