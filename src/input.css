@@ -296,4 +296,60 @@
     .pillar-text {
         @apply text-[15px] leading-[1.9] text-muted text-justify pt-6 lg:pt-8;
     }
+
+    .form-card {
+        @apply bg-surface px-8 lg:px-12 py-12 lg:py-14;
+    }
+
+    .form-title {
+        @apply font-display text-3xl lg:text-[40px] leading-tight;
+    }
+
+    .form-note {
+        @apply text-[13px] text-muted pt-3;
+    }
+
+    .field-label {
+        @apply block text-[11px] tracking-[0.28em] uppercase text-line pb-3;
+    }
+
+    .field-required {
+        @apply text-line;
+    }
+
+    .field-input {
+        @apply w-full bg-background border border-hair px-5 py-4 text-[15px] text-text placeholder:text-muted focus:border-line focus:outline-none transition-colors duration-300;
+    }
+
+    .field-textarea {
+        @apply w-full bg-background border border-hair px-5 py-4 text-[15px] text-text placeholder:text-muted focus:border-line focus:outline-none transition-colors duration-300 resize-y min-h-40;
+    }
+
+    .form-submit {
+        @apply self-start mt-8 px-12 py-5 border border-line text-[11px] tracking-[0.28em] uppercase text-line hover:bg-tint transition-colors duration-300;
+    }
+
+    .atelier-row {
+        @apply py-8 border-b border-hair;
+    }
+
+    .atelier-city {
+        @apply text-[11px] tracking-[0.28em] uppercase text-line;
+    }
+
+    .atelier-hours {
+        @apply text-[11px] tracking-[0.22em] text-muted;
+    }
+
+    .atelier-address {
+        @apply font-display text-xl lg:text-2xl text-text pt-4;
+    }
+
+    .atelier-phone {
+        @apply text-[14px] text-muted pt-3;
+    }
+
+    .out-of-hours {
+        @apply border border-line px-8 lg:px-10 py-10 mt-12;
+    }
 }
