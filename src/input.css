@@ -192,33 +192,23 @@
         @apply not-italic text-[11px] tracking-[0.3em] uppercase text-line pt-8 lg:pt-10;
     }
 
-    .step-row {
-        @apply grid gap-6 lg:gap-16 lg:grid-cols-[220px_1fr] px-2 lg:px-4 py-10 lg:py-14 border-b border-hair hover:bg-card/40 transition-colors duration-300;
-    }
-
-    .step-aside {
-        @apply flex items-baseline gap-5 lg:flex-col lg:gap-4;
-    }
-
-    .step-index {
-        @apply text-[11px] tracking-[0.3em] uppercase text-line;
-    }
-
-    .step-time {
-        @apply font-display text-4xl lg:text-5xl leading-none text-text;
-    }
-
-    .step-body {
-        @apply lg:max-w-2xl;
-    }
-
-    .step-title {
-        @apply font-display text-2xl lg:text-[30px] leading-tight;
-    }
-
-    .why-text,
-    .step-text {
+    .why-text {
         @apply text-[15px] leading-[1.9] text-muted pt-5;
     }
 
+    .concierge-card {
+        @apply flex flex-col px-8 lg:px-10 py-10 lg:py-12 border border-hair bg-card/40 hover:bg-card transition-colors duration-300;
+    }
+
+    .concierge-icon {
+        @apply flex items-center justify-center w-14 h-14 border border-hair text-line;
+    }
+
+    .concierge-title {
+        @apply font-display text-2xl lg:text-[28px] leading-tight pt-8 lg:pt-10;
+    }
+
+    .concierge-note {
+        @apply mt-auto pt-8 border-t border-hair text-[11px] tracking-[0.28em] uppercase text-line;
+    }
 }

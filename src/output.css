@@ -295,6 +295,9 @@
   .aspect-4\/3 {
     aspect-ratio: 4/3;
   }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -315,6 +318,9 @@
   }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
@@ -824,6 +830,9 @@
     }
     .lg\:gap-7 {
       gap: calc(var(--spacing) * 7);
+    }
+    .lg\:gap-8 {
+      gap: calc(var(--spacing) * 8);
     }
     .lg\:gap-10 {
       gap: calc(var(--spacing) * 10);
@@ -1493,13 +1502,24 @@
       padding-top: calc(var(--spacing) * 10);
     }
   }
-  .step-row {
-    display: grid;
-    gap: calc(var(--spacing) * 6);
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
+  .why-text {
+    padding-top: calc(var(--spacing) * 5);
+    font-size: 15px;
+    --tw-leading: 1.9;
+    line-height: 1.9;
+    color: var(--color-muted);
+  }
+  .concierge-card {
+    display: flex;
+    flex-direction: column;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
     border-color: var(--color-hair);
-    padding-inline: calc(var(--spacing) * 2);
+    background-color: color-mix(in srgb, #1D1D1D 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-card) 40%, transparent);
+    }
+    padding-inline: calc(var(--spacing) * 8);
     padding-block: calc(var(--spacing) * 10);
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1508,76 +1528,52 @@
     transition-duration: 300ms;
     &:hover {
       @media (hover: hover) {
-        background-color: color-mix(in srgb, #1D1D1D 40%, transparent);
-        @supports (color: color-mix(in lab, red, red)) {
-          background-color: color-mix(in oklab, var(--color-card) 40%, transparent);
-        }
+        background-color: var(--color-card);
       }
     }
     @media (width >= 64rem) {
-      grid-template-columns: 220px 1fr;
+      padding-inline: calc(var(--spacing) * 10);
     }
     @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 16);
-    }
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 4);
-    }
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 14);
+      padding-block: calc(var(--spacing) * 12);
     }
   }
-  .step-aside {
+  .concierge-icon {
     display: flex;
-    align-items: baseline;
-    gap: calc(var(--spacing) * 5);
-    @media (width >= 64rem) {
-      flex-direction: column;
-    }
-    @media (width >= 64rem) {
-      gap: calc(var(--spacing) * 4);
-    }
-  }
-  .step-index {
-    font-size: 11px;
-    --tw-tracking: 0.3em;
-    letter-spacing: 0.3em;
+    height: calc(var(--spacing) * 14);
+    width: calc(var(--spacing) * 14);
+    align-items: center;
+    justify-content: center;
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    border-color: var(--color-hair);
     color: var(--color-line);
-    text-transform: uppercase;
   }
-  .step-time {
-    font-family: var(--font-display);
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-    --tw-leading: 1;
-    line-height: 1;
-    color: var(--color-text);
-    @media (width >= 64rem) {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-  }
-  @media (width >= 64rem) {
-    .step-body {
-      max-width: var(--container-2xl);
-    }
-  }
-  .step-title {
+  .concierge-title {
+    padding-top: calc(var(--spacing) * 8);
     font-family: var(--font-display);
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
     @media (width >= 64rem) {
-      font-size: 30px;
+      padding-top: calc(var(--spacing) * 10);
+    }
+    @media (width >= 64rem) {
+      font-size: 28px;
     }
   }
-  .why-text, .step-text {
-    padding-top: calc(var(--spacing) * 5);
-    font-size: 15px;
-    --tw-leading: 1.9;
-    line-height: 1.9;
-    color: var(--color-muted);
+  .concierge-note {
+    margin-top: auto;
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+    border-color: var(--color-hair);
+    padding-top: calc(var(--spacing) * 8);
+    font-size: 11px;
+    --tw-tracking: 0.28em;
+    letter-spacing: 0.28em;
+    color: var(--color-line);
+    text-transform: uppercase;
   }
 }
 @property --tw-border-style {
